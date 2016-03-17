@@ -1,0 +1,27 @@
+package mobiletesting.transportworld;
+
+import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
+public class BookaTruck extends AppCompatActivity {
+
+    Button button8_sbm;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_book_a_truck);
+        button8_sbm = (Button)findViewById(R.id.button9);
+        button8_sbm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent("mobiletesting.transportworld.Homepage");
+                startActivity(intent);
+            }
+        });
+
+    }
+}
